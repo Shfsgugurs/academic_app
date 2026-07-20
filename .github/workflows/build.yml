@@ -17,6 +17,9 @@ jobs:
           flutter-version: '3.19.0'
           channel: 'stable'
 
+      - name: Create missing android files
+        run: flutter create . --platforms=android --org com.example.academicapp
+
       - name: Install dependencies
         run: flutter pub get
 
